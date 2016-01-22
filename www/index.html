@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+  
+        <!--<meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="javascript" href="js/java.js">
+        <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />-->
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <!-- <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>-->
+        <title>Filmes e Séreies</title>
+    </head>
+    <body>
+        <div>
+            <div data-role="page">
+                <div data-role="header">
+                    <h1>Watching</h1>
+                </div>
+                <ul data-role="listview">
+                    <li><a href="introducao.html">JESSICA JONES</a></li>
+                    <li><a href="index.html">VIKNGS</a></li>
+                    <li><a href="index.html">THE ORIGINALS</a></li>
+                    <li><a href="index.html">BATES MOTEL</a></li>            
+                </ul>
+
+                <div data-role"content"> 
+                    <a href="#pageMovies"><button>Movies</button></a>
+                    <a href="#pageSeries"><button>Series</button></a>
+                    <a href="/social.html"><button>Social</button></a>
+                </div> 
+                <div data-role"content"> 
+                    <div data-role="header">
+                        <h2>Sugestions</h2>
+                    </div>
+                    <ul data-role="listview">
+                        <li><a href="introducao.html">GAME OF THRONES</a></li>
+                        <li><a href="index.html">BLACKLIST</a></li>
+                    </ul>
+                </div>
+                <nav>
+                    <a href="#pageNew"><button>ADCINONAR NOVO</button></a>
+                    <a href="/assistidos.html"><button>ASSISTIDOS</button></a>
+                    <a href="/favoritos.html"><button>FAVORITOS</button></a>
+                </nav>
+            </div>
+        
+            <div data-role="page" data-title="New" id="pageNew">
+                <form id="formularioSearch" >
+                    <label for="nome" id="labelSearch"> Procure o filme/série:</label><br/>
+                    <input type="text" id="campo" >
+                    <input type="button" value="Search" onClick="searchIMDB();">    
+
+                </form>  
+                <div id="resultado" >
+                </div>
+            
+            </div>
+            
+            <div data-role="page" data-title="Adicionar Novo" id="pageADC" >
+            
+                <H2 id="nomeItemClicado"></H2>
+                <h2 id="tipoItemClicado"></h2>
+                <h2 id="idYear"></h2>
+                <div class="thumb" id="idPoster"></div>
+                <input type="button" value="Adicionar">
+            </div>
+            
+            <div data-role="page" data-title="Movies" id="pageSeries">
+                <ul data-role="listview">
+                    <li><a href="introducao.html">AMERICAN HOROR HISTORY </a></li>
+                    <li><a href="index.html">THE ORIGINALS </a></li>
+                </ul>
+            </div>
+            
+        </div>
+       
+        <script type="text/javascript" src="js/java.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+    </body>
+</html>
